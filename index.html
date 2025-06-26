@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container">
+    
+    <!-- Section 1: Input Fields for User Data -->
+    <section class="input-section">
+        <h2>Register Your Account</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <label for="roll-No">Roll No:</label>
+        <input type="number" id="roll-No" placeholder="Enter your roll number">
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" placeholder="Enter your course name">
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB">
+        <label for="gender" class="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <button onclick="storeData()">Store Data</button>
+      </section>
+      
+
+
+
+  </div>
+  <div class="main-container">
+    
+   
+
+    <!-- Section 2: Login -->
+    <section class="login-section">
+      <h2>Login to Your Account</h2>
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" placeholder="Enter your email">
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" placeholder="Enter your password">
+      <button onclick="validateLogin()">Login</button>
+    </section>
+
+    <!-- Section 3: User Profile Display -->
+    <section class="profile-section">
+      <h2>Your Profile</h2>
+      <div id="profile-info"></div>
+      <button onclick="logout()">Logout</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
